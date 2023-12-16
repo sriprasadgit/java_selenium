@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MyTestSuite">
+    <test name="ValidUserTest">
+        <parameter name="username" value="standard_user"/>
+        <parameter name="password" value="secret_sauce"/>
+        <classes>
+            <class name="com.selenium_learning.seleniumtest.Controller"/>
+        </classes>
+    </test>
+
+    <test name="InvalidUserTest">
+        <parameter name="username" value="standard_Invaliduser"/>
+        <parameter name="password" value="secret_Invalidpwd"/>
+        <classes>
+            <class name="com.selenium_learning.seleniumtest.Controller"/>
+        </classes>
+    </test>
+</suite>
